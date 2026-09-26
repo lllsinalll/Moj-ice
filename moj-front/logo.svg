@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220">
-<path d="M35 150 Q105 105 175 150 T315 150 T405 150" fill="none" stroke="#79c8ed" stroke-width="18" stroke-linecap="round"/>
-<path d="M30 178 Q100 140 170 178 T310 178 T400 178" fill="none" stroke="#f58220" stroke-width="11" stroke-linecap="round"/>
-<path d="M205 50 C170 38 145 65 154 92 C120 95 111 130 136 149 C160 167 186 153 205 146 C224 153 250 167 274 149 C299 130 290 95 256 92 C265 65 240 38 205 50Z" fill="white" stroke="#1c527e" stroke-width="7"/>
-<path d="M170 140 L205 207 L240 140Z" fill="#f3bd72" stroke="#c9873b" stroke-width="4"/>
-<path d="M181 157 L229 157 M188 172 L222 172 M195 187 L215 187" stroke="#c9873b" stroke-width="3"/>
-<text x="205" y="30" text-anchor="middle" font-family="Tahoma" font-size="16" font-weight="700" fill="#1c527e">M O J  I C E</text>
-<text x="205" y="111" text-anchor="middle" font-family="Tahoma" font-size="38" font-weight="800" fill="#f58220">موج آیس</text>
-</svg>
