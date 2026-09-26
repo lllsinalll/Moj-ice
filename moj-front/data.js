@@ -14,7 +14,9 @@ function getMenuData() {
 
 async function loadCategoriesFromMongoDB() {
   try {
-    const response = await fetch("http://localhost:3000/categories");
+    const response = await fetch(
+      "https://moj-ice-back.onrender.com/categories"
+    );
 
     if (!response.ok) {
       throw new Error("Failed to load categories");
@@ -43,7 +45,7 @@ async function loadCategoriesFromMongoDB() {
 
 async function loadProductsFromMongoDB() {
   try {
-    const response = await fetch("http://localhost:3000/products");
+    const response = await fetch("https://moj-ice-back.onrender.com/products");
 
     if (!response.ok) {
       throw new Error("Failed to load products");

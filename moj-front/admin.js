@@ -57,7 +57,7 @@ catForm.onsubmit = async (e) => {
   };
 
   try {
-    const response = await fetch("http://localhost:3000/categories", {
+    const response = await fetch("https://moj-ice-back.onrender.com/categories", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -572,7 +572,7 @@ confirmDialog.addEventListener("close", () => {
 
 async function createProduct(product) {
   try {
-    const response = await fetch("http://localhost:3000/products", {
+    const response = await fetch("https://moj-ice-back.onrender.com/products", {
       method: "POST",
 
       headers: {
@@ -606,7 +606,7 @@ async function createProduct(product) {
 
 async function updateProduct(id, product) {
   try {
-    const response = await fetch(`http://localhost:3000/products/${id}`, {
+    const response = await fetch(`https://moj-ice-back.onrender.com/products/${id}`, {
       method: "PUT",
 
       headers: {
@@ -640,7 +640,7 @@ async function updateProduct(id, product) {
 
 async function deleteProduct(id) {
   try {
-    const response = await fetch(`http://localhost:3000/products/${id}`, {
+    const response = await fetch(`https://moj-ice-back.onrender.com/products/${id}`, {
       method: "DELETE",
     });
 
@@ -664,7 +664,7 @@ async function deleteProduct(id) {
 
 async function deleteCategory(id) {
   try {
-    const response = await fetch(`http://localhost:3000/categories/${id}`, {
+    const response = await fetch(`https://moj-ice-back.onrender.com/categories/${id}`, {
       method: "DELETE",
     });
 
@@ -689,7 +689,7 @@ async function uploadImage(file) {
     const formData = new FormData();
     formData.append("image", file);
 
-    const response = await fetch("http://localhost:3000/upload", {
+    const response = await fetch("https://moj-ice-back.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
