@@ -45,9 +45,7 @@ async function loadCategoriesFromMongoDB() {
 
 async function loadProductsFromMongoDB() {
   try {
-    const response = await fetch(
-      "https://moj-ice-back.onrender.com/api/products"
-    );
+    const response = await fetch("https://moj-ice-back.onrender.com/products");
 
     if (!response.ok) {
       throw new Error("Failed to load products");

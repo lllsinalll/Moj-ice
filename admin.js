@@ -57,13 +57,16 @@ catForm.onsubmit = async (e) => {
   };
 
   try {
-    const response = await fetch("https://moj-ice-back.onrender.com/categories", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(category),
-    });
+    const response = await fetch(
+      "https://moj-ice-back.onrender.com/categories",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(category),
+      }
+    );
 
     const data = await response.json();
 
@@ -572,7 +575,7 @@ confirmDialog.addEventListener("close", () => {
 
 async function createProduct(product) {
   try {
-    const response = await fetch("https://moj-ice-back.onrender.com/api/products", {
+    const response = await fetch("https://moj-ice-back.onrender.com/products", {
       method: "POST",
 
       headers: {
@@ -606,15 +609,18 @@ async function createProduct(product) {
 
 async function updateProduct(id, product) {
   try {
-    const response = await fetch(`https://moj-ice-back.onrender.com/api/products/${id}`, {
-      method: "PUT",
+    const response = await fetch(
+      `https://moj-ice-back.onrender.com/products/${id}`,
+      {
+        method: "PUT",
 
-      headers: {
-        "Content-Type": "application/json",
-      },
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify(product),
-    });
+        body: JSON.stringify(product),
+      }
+    );
 
     const data = await response.json();
 
@@ -640,9 +646,12 @@ async function updateProduct(id, product) {
 
 async function deleteProduct(id) {
   try {
-    const response = await fetch(`https://moj-ice-back.onrender.com/api/products${id}`, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      `https://moj-ice-back.onrender.com/products/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
 
     const data = await response.json();
 
@@ -664,9 +673,12 @@ async function deleteProduct(id) {
 
 async function deleteCategory(id) {
   try {
-    const response = await fetch(`https://moj-ice-back.onrender.com/categories/${id}`, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      `https://moj-ice-back.onrender.com/categories/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
 
     const data = await response.json();
 
