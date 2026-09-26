@@ -610,7 +610,7 @@ async function createProduct(product) {
 async function updateProduct(id, product) {
   try {
     const response = await fetch(
-      `https://moj-ice-back.onrender.com/api/products/${id}`,
+      `https://moj-ice-back.onrender.com/products/${id}`,
       {
         method: "PUT",
 
