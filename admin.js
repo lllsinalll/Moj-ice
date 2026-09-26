@@ -422,7 +422,7 @@ itemForm.onsubmit = async (e) => {
       return;
     }
   }
-  console.log("FINAL imageUrl:", imageUrl);
+
   const product = {
     name: itemName.value.trim(),
 
@@ -610,7 +610,7 @@ async function createProduct(product) {
 async function updateProduct(id, product) {
   try {
     const response = await fetch(
-      `https://moj-ice-back.onrender.com/products/${id}`,
+      `https://moj-ice-back.onrender.com/api/products/${id}`,
       {
         method: "PUT",
 
@@ -700,20 +700,17 @@ async function uploadImage(file) {
   try {
     const formData = new FormData();
     formData.append("image", file);
-
     const response = await fetch("https://moj-ice-back.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
-
     const data = await response.json();
-
     if (!response.ok) {
       throw new Error(data.message || "خطا در آپلود عکس");
     }
-
-    console.log("Image uploaded:", data);
-
+    console.log("🔥 NEW UPLOAD FUNCTION 🔥");
+    console.log("SERVER DATA:", data);
+    console.log("SERVER IMAGE URL:", data.imageUrl);
     return data.imageUrl;
   } catch (error) {
     console.error("Upload image error:", error);
