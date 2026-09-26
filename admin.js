@@ -422,7 +422,7 @@ itemForm.onsubmit = async (e) => {
       return;
     }
   }
-
+  console.log("FINAL imageUrl:", imageUrl);
   const product = {
     name: itemName.value.trim(),
 
